@@ -13,11 +13,11 @@ export class Filter extends Component {
       <div className={css.divFilter}>
         <p>Find Contacts by Name</p>
         <input
-          type="text"
-          name="filter"
-          placeholder="Search by name"
-          value={filter}
-          onChange={this.handleFilterChange}
+          type = "text"
+          name = "filter"
+          placeholder = "Search by name"
+          value = {filter}
+          onChange = {this.handleFilterChange}
         />
       </div>
     );
