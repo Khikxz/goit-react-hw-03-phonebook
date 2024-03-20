@@ -30,7 +30,7 @@ export class App extends Component {
   addContact = newContact => {
     const {contacts} = this.state;
     const duplicateContact = contacts.find(
-      contact => contact.name == newContact.name
+      contact => contact.name === newContact.name
     );
 
     if (duplicateContact){
@@ -69,7 +69,6 @@ export class App extends Component {
       <div>
         <h1>Phonebook</h1>
         <ContactForm addContact={this.addContact} contacts={contacts} />
-
         <h2>Contacts</h2>
         <Filter filter={filter} setFilter={this.setFilter} />
         <ContactList
